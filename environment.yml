@@ -3,7 +3,7 @@ channels:
   - conda-forge
 dependencies:
 - appmode
-- bqplot
+- bqplot=0.11.6
 - scipy
 - numpy
 - pip
