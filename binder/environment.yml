@@ -1,0 +1,12 @@
+name: libraries
+channels:
+  - conda-forge
+dependencies:
+- appmode
+- bqplot=0.11.6
+- scipy
+- numpy
+- pip
+- matplotlib
+- pip:
+  - jupyterlab_latex

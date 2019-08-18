@@ -1,0 +1,7 @@
+bqplot
+jupyter-contrib-core
+jupyter-contrib-nbextensions
+ipywidgets
+notebook
+numpy
+widgetsnbextension
