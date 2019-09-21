@@ -1,0 +1,185 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[basque]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{lmodern}
+\usepackage[left=3cm,right=3cm,top=3cm,bottom=2cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{montserrat}
+\usepackage{lastpage}
+\usepackage{afterpage}
+\newcommand\blankpage{%
+	\null
+	\thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+	\newpage}
+
+\usepackage[export]{adjustbox}
+\usepackage{wrapfig}
+\usepackage{hyperref}
+
+\usepackage{nameref}
+
+\setlength\parindent{0pt}
+
+\usepackage{xcolor}
+\usepackage{titlesec}
+  
+\let\nf\normalfont %\nf komandoari \nf deitu  
+\newcommand{\cf}{\normalfont\sffamily}
+
+  
+\titleformat{\section}
+  {\nf\sffamily\Large}
+  {\thesection}{1em}{}
+
+\titleformat{\subsection}
+  {\nf\sffamily\Large}
+  {\thesubsection}{1em}{}
+
+\renewcommand{\footrulewidth}{0pt}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\cf 2019/09/14}
+\chead{\cf v 1.0}
+\rhead{\cf \# DDD-DDD}
+\fancyfoot[C]{\cf\thepage /\pageref{LastPage}}
+
+
+\title{\cf \# 111-000 \\ \vspace{5mm}
+					Van der Waals-en egoera ekuazioaren azterketa 2 dimentsiotan: p(v, T)\\
+\normalsize \vspace{5mm} Data: 2019/09/16 \\
+ 			\vspace{3mm} Bertsioa: 1.0}
+\date{}
+%\author{Jon Gabirondo López}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{fancy}
+%\author
+
+\section{Helburua}
+Programa honen helburua grafika interaktibo baten bitartez ikasleari Van der Waals-en egoera ekuazio mekanikoan agertzen diren parametro zein aldagaiek duten esangura fisikoataz jabetzea da. Aipaturiko aldagaiek sistemaren fisikan duten eragina momentuan ikusteak lehen ebazteko neketsuagoak ziren ariketak plantetzeko aukera ematen zaie irakasleei.
+\\
+
+\section{Oinarri teorikoa}
+Honakoa da Van der Waals-en egoera ekuazio mekanikoa:
+
+\begin{equation}\label{van_der_waals}
+\left( p + \frac{a}{v^2} \right) ( v- b) = RT \qquad \text{non} \qquad R = \text{gas idealen konstantea}
+\end{equation}
+
+Sarritan, ekuazioaren forma laburtua erabiltzen da, batez ere esanguratsuak diren adieazpen grafikoak lortzeko.
+
+\begin{equation}
+p_R = \frac{p}{p_c} \qquad v_R = \frac{v}{v_c} \qquad T_R = \frac{T}{T_c}
+\end{equation}
+
+Aldagai erlatiboak definituz eta \ref{van_der_waals} ekuazioan ordezkatuz honako lortu dezakegu:
+
+\begin{equation}\label{van_der_waals_R}
+\left( p_R + \frac{3}{v_R^2} \right) ( v_R - \frac{1}{3}) = \frac{8}{3} T_R 
+\end{equation}
+
+non $p_c$, $v_c$ eta $T_c$ gasaren presio, volumen eta tenperatura-kritikoak diren, hurrenez-hurren:
+
+\begin{equation}
+p_C = \frac{1}{27} \frac{a}{b^2} \qquad v_c = 3b \qquad T_c = \frac{8}{27}\frac{a}{b}\frac{1}{R}
+\end{equation}
+
+Sarritan lortutako \ref{van_der_waals_R} ekuazioa erabiltzen da gas baten lerro isotermoak grafikatzeko. 
+
+%Tenperatura kritikoaren azpitik zonalde batean gasaren egoerak ez du egonkortasun baldintza beteko.
+
+ETAB. 
+\section{Garapena}
+
+\begin{itemize}
+
+\item \cf \#111-001: Gas errealen parametroen datubasea.
+\\
+\nf Programak kargatuta izango ditu ohiko gasen $a$ eta $b$ parametroak. Horrela, modu azkar batean elementu ezberdinen izaeraren informazioa eskuragarri egongo da.
+
+\item \cf \#111-002: a eta b parametroak eskuz aldatzeko sliderrak.
+\\
+\nf $a$ eta $b$ parametroak eskuz aldatzeko aukera egongo da. Bi slider hauek \cf \# 111-005 \nf grafikara lotuta egongo dira eta
+momentuan ikusiko da parametro horiek aldatzearen eragina.
+
+\item \cf \#111-003: Tenperatura tartea aurkeratzeko textu-formularioak.
+\\
+\nf Kalkulatu nahi den tenperaturaren tartea, $T_c$-rekiko erlatiboki adierazita.
+
+\item \cf \#111-004: Grafika sortzeko botoia.
+\\
+\nf Grafika lehenengo aldiz generatzeko botoia. Hasieran hemendik beherako elementu guztiak ez dira ikusgai egongo eta hau lehenengo aldiz sakatzean agertuko dira. Honek erabiltzailearen atentzioa bideratzea du helburu.
+
+\item \cf \#111-005: p(v,T) planoaren grafika.
+\\
+\nf Grafika honetan une horretan lan egiten ari zaren lerro isotermoa, gordetako isoterma guztiak eta isoterma horietan gordetako markadoreak agertuko dira. Gainera, Maxwell-en 'construction'-eko lerro horizontala (isoterma erreala lortzeko erabiltzen dena) agertuko da eta zuzen hori eta lerro isotermaren arteko azalera koloreztatuta agertuko da.
+
+\item \cf \#111-006: Lerro isoterma ezberdinekin lan egiteko slider-a.
+\\
+\nf Sliderrak une batean lan egiten ari garen lerro isotermoaren tenperatura aldatzeko balioko du.
+
+\item \cf \#111-007: Lerro isotermaren tenperatura.
+\\
+\nf Une batean lan egiten ari garen lerro isotermoaren tenperatura adieraziko du. \cf \#111-006: \nf elementuarekin lotuta egongo da.
+
+\item \cf \#111-008: Kalkulatutako isoterma guztiak erakusteko checkbox-a.
+\\
+\nf Aktibatuta dagoenean \cf \#111-003 \nf elementuan aukeratutako tartean kalkulatutako isoterma guztiak erakutsiko dira.
+\\
+
+\textit{Zenbat isoterma kalkulatu behar diren aukeratzeko textu formulario bat jarri beharko litzateke.}
+
+\item \cf \#111-009: Isotermak gordetzeko botoiak.
+\\
+\nf Lan egiten ari zaren isoterma gordetzeko edota gordetako azkena baztertzeko botoiak.
+
+\item \cf \#111-00A: Isoterman 'tracer' bat erakusteko checkbox-a eta hori mugitzeko slider-a.
+\\
+\nf Checkbox-a aktibatzean une horretan lan egiten ari garen isoterman puntu bat agertuko da, sliderraren bitartez isoterman zehar mugitu ahalko dena.
+
+\item \cf \#111-00B: Marka bat gehitzeko formularioa.
+\\
+\nf Botoiari sakatzean textu formularioan jasotako izena duen puntu bat markatuko da 'tracer'-a dagoen tokian.
+\\
+
+\textit{Markak kentzeko botoi bat eta dropdown bat jarri beharko ziren.}
+
+\item \cf \#111-00C: 'Maxwell contruction' (palankaren erregela) erakusteko checkbox-a.
+\\
+\nf Aktibatzean palankaren erregelaren erlazionatutako elementuak ikusiko dira \cf \#111-005 \nf grafikan (presio konstanteko zuzena eta koloreztatutako azalerak, azken hauek aktibatuta badaude).
+
+\item \cf \#111-00D: presio konstanteko zuzena mugitzeko sliderra.
+\\
+\nf
+
+\item \cf \#111-00E: Isotermaren eta presio konstanteko lerroaren arteko azalerak koloreztatzeko checkbox-a.
+\\
+\nf Aktibatzean aipaturiko azalerak koloreztatuko dira.
+
+\item \cf \#111-00F: Isotermaren eta presio konstanteko lerroaren arteko azaleren balioak adierazteko textuak.
+\\
+\nf Isotermaren eta presio konstanteko lerroaren arteko azaleren balioak agertuko dira: zuzenak aldapa konstanteko isotermaren zatia mozten duenetik ezkerrera gelditzen denaren azalera, bertatik eskubira gelditzen deneko azalera eta bien batura.
+\\
+
+Integral guztiak analitikoki ebatziko dira.
+\\
+
+\item \cf \#111-010: Isoterma erreala kalkulatzeko botoia.
+\\
+\nf Sakatzean, programa arduratuko da presio ezberdinetarako integralak burutzeaz eta integrala 0 deneko presioa topatzeaz. Agian, prozedura grafikan ikusi daiteke.
+
+\item \cf \#111-011: Irudia exportatzeko botoia.
+\\
+\nf Sakatzean lortutako irudia formatu ezberdinetara exportatzea ahalbdeituko duen menu bat agertuko da.
+\end{itemize}
+\end{document}
