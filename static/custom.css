@@ -7,3 +7,11 @@
 .jupyter-widgets{
 	font-size:15px;
 }
+
+.widget-checkbox > .widget-label{
+	width: 0;
+}
+
+.dot_text{
+	font-size:15px;
+}
