@@ -1,0 +1,136 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[basque]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{lmodern}
+\usepackage[left=3cm,right=3cm,top=3cm,bottom=2cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{montserrat}
+\usepackage{lastpage}
+\usepackage{afterpage}
+\newcommand\blankpage{%
+	\null
+	\thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+	\newpage}
+
+\usepackage[export]{adjustbox}
+\usepackage{wrapfig}
+\usepackage{hyperref}
+
+\usepackage{nameref}
+
+\setlength\parindent{0pt}
+
+\usepackage{xcolor}
+\usepackage{titlesec}
+  
+\let\nf\normalfont %\nf komandoari \nf deitu  
+\newcommand{\cf}{\normalfont\sffamily}
+
+  
+\titleformat{\section}
+  {\nf\sffamily\Large}
+  {\thesection}{1em}{}
+
+\titleformat{\subsection}
+  {\nf\sffamily\Large}
+  {\thesubsection}{1em}{}
+
+\renewcommand{\footrulewidth}{0pt}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\cf 2019/10/15}
+\chead{\cf v 1.0}
+\rhead{\cf \# 412-000}
+\fancyfoot[C]{\cf\thepage /\pageref{LastPage}}
+
+
+\title{\cf \# 412-000 \\ \vspace{5mm}
+					Exportatzeko modulua: bqplot to matplotlib\\
+\normalsize \vspace{5mm} Data: 2019/10/15 \\
+ 			\vspace{3mm} Bertsioa: 1.0}
+\date{}
+%\author{Jon Gabirondo López}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{fancy}
+%\author
+
+\section{Helburua}
+Modulo honen helburua bqplot-eko Figure bat jaso eta matplotlib erabiliz aipaturiko figuraren kalitate handiko irudi bat sortzea da. Figura jasotzean bere barnean dituen marken (lerroak, scatter-ak etab.) itxura aldatzea ahalbidetuko du eta egindako aldaketak bqplot-eko figura batean zein amaierako irudiaren berdina izango den matplotlib-en irudi batean ikusi ahalko dira.
+\\
+
+Modulo hau MinervaLab-eko programa askorekin zein CallistoLab-ekin konpatiblea izateko diseinatu da.
+
+\section{Garapena}
+
+\begin{itemize}
+
+\item \cf \#412-001: Izenburua aldatzeko textu-formularioa.
+\\
+\nf Formulario honek une horretan figurak duen izenburua erakutsiko du eta aldatzean \cf \# 412-004 \nf elementuan zuzenean aldatuko da.
+
+\item \cf \#412-002: Ardatzen izenak aldatzeko textu-formularioa.
+\\
+\nf Formulario honek une horretan figurak duen izenburua erakutsiko du eta aldatzean \cf \# 412-004 \nf elementuan zuzenean aldatuko da.
+
+\item \cf \#412-003: Ardatzetako tick-en formatoa aldatzeko checkbox-ak.
+\\
+\nf Sakatzean ardatzetako tick-en balioak borobilduta agertuko dira \cf \# 412-004 \nf elementuan.
+
+\textit{Agian tick-en hamartar kopurua zehazteko dropdown-ak jarri daitezke.}
+
+\item \cf \#412-004: bqplot-eko figura.
+\\
+\nf Figuraren uneoroko egoera erakusten duen bqplot-eko figura. Matplotlib-ekin interakzioa askoz zailagoa denez, aldaketen previsualizazioa elementu honen bidez eskaintzen da eta, gero, nahi denean \cf \# 412-005 \nf elementura pasatzen dira \cf \# 412-00B \nf botoia sakatzean.
+
+\item \cf \#412-005: matplotlib-eko figura.
+\\
+\nf Lortuko den irudiaren egoera erakusten duen matplotlib-eko figura. \cf \# 412-00B \nf botoia sakatzean \cf \#412-004 \nf -ko marka guztien egoera honera bidaltzen dira.
+
+\item \cf \#412-006: Markaren izena aldatzeko textu-formularioa.
+\\
+\nf Formulario honek une horretan markak duen izena erakutsiko du eta aldatzean leyendako balioa aldatuko da.
+
+\item \cf \#412-007: Datuen estiloa aldatzeko dropdown-a.
+\\
+\nf Markaren uneoroko estiloa erakusten du (edo errepresentazio mota). Aukerak 'Scatter' eta 'Line' izango dira.
+\\
+
+\item \cf \#412-008: Markaren zabalera aldatzeko slider-a.
+\\
+\nf Hau aldatzean markaren zabalera aldatuko da \cf \# 412-004 \nf elementuan.
+\\
+
+\item \cf \#412-009: Markaren opazitatea aldatzeko slider-a.
+\\
+\nf Hau aldatzean markaren opazitatea aldatuko da \cf \# 412-004 \nf elementuan.
+
+\item \cf \#412-00A: Markaren kolorea aldatzeko formularioa (color-picker-a).
+\\
+\nf Hau aldatzean markaren kolorea aldatuko da \cf \# 412-004 \nf elementuan.
+
+\item \cf \#412-00B: matplotlib-eko figura eguneratzeko botoia.
+\\
+\nf Botoia sakatzean \cf \# 412-004 \nf elementuko marka guztiak eta haien egoera \cf \# 412-005 \nf elementura pasako dira.
+\\
+
+\item \cf \#412-00C: Sortuko den fitxategiaren izena idazteko textu-formularioa.
+\\
+\nf \cf \# 412-004 \nf -ko botoiak sakatzean sortzen diren fitxategien izena bezala formulario honen balioa erabiliko da (formatuaren atzizki egokiarekin, noski)
+\\
+
+\item \cf \#412-00D: Fitxategiak sortzeko botoiak.
+\\
+\nf Sakatzean dagokion formatuko fitxategi bat sortu eta hura deskargatzeko beste botoi bat agertuko da.
+\end{itemize}
+\end{document}
