@@ -25,6 +25,9 @@
 
 \usepackage{nameref}
 
+\usepackage{tabularx} %multilie tables egiteko
+    \newcolumntype{L}{>{\raggedright\arraybackslash}X}
+
 \setlength\parindent{0pt}
 
 \usepackage{xcolor}
@@ -46,16 +49,16 @@
 
 \pagestyle{fancy}
 \fancyhf{}
-\lhead{\cf 2019/09/14}
-\chead{\cf v 1.0}
-\rhead{\cf \# DDD-DDD}
+\lhead{\cf 2019/11/04}
+\chead{\cf v 2.0}
+\rhead{\cf \# 111-000}
 \fancyfoot[C]{\cf\thepage /\pageref{LastPage}}
 
 
 \title{\cf \# 111-000 \\ \vspace{5mm}
 					Van der Waals-en egoera ekuazioaren azterketa 2 dimentsiotan: p(v, T)\\
-\normalsize \vspace{5mm} Data: 2019/09/16 \\
- 			\vspace{3mm} Bertsioa: 1.0}
+\normalsize \vspace{5mm} Data: 2019/11/04 \\
+ 			\vspace{3mm} Bertsioa: 2.0}
 \date{}
 %\author{Jon Gabirondo López}
 
@@ -64,6 +67,34 @@
 \maketitle
 \thispagestyle{fancy}
 %\author
+
+\begin{table}[h]
+    \centering
+\begin{tabularx}{\linewidth}{|c|c|L|} 
+    \hline
+\cf Bertsioa & \cf Data & \cf Deskribapena \\ \hline
+1.0 & 2019/09/16 & \#111-000ren lehenengo bertsioa. \\  \hline
+2.0 & 2019/11/04 & Berriak: \begin{itemize}
+\item \#111-012
+\item \#111-013
+\item \#111-014
+\end{itemize}
+Aldatutakoak: \begin{itemize}
+\item \#111-003: pausua aukeratzeko inputa gehitu
+\item \#111-00A: tracer-aren posizioa erakusteko textua gehitu.
+\end{itemize}
+Kendutakoak: \begin{itemize}
+\item \#111-001
+\item \#111-004
+\item \#111-007
+\end{itemize} \\ \hline
+\end{tabularx}
+    \end{table}
+
+\newpage
+
+\maketitle
+\thispagestyle{fancy}
 
 \section{Helburua}
 Programa honen helburua grafika interaktibo baten bitartez ikasleari Van der Waals-en egoera ekuazio mekanikoan agertzen diren parametro zein aldagaiek duten esangura fisikoataz jabetzea da. Aipaturiko aldagaiek sistemaren fisikan duten eragina momentuan ikusteak lehen ebazteko neketsuagoak ziren ariketak plantetzeko aukera ematen zaie irakasleei.
@@ -103,10 +134,6 @@ ETAB.
 
 \begin{itemize}
 
-\item \cf \#111-001: Gas errealen parametroen datubasea.
-\\
-\nf Programak kargatuta izango ditu ohiko gasen $a$ eta $b$ parametroak. Horrela, modu azkar batean elementu ezberdinen izaeraren informazioa eskuragarri egongo da.
-
 \item \cf \#111-002: a eta b parametroak eskuz aldatzeko sliderrak.
 \\
 \nf $a$ eta $b$ parametroak eskuz aldatzeko aukera egongo da. Bi slider hauek \cf \# 111-005 \nf grafikara lotuta egongo dira eta
@@ -114,11 +141,10 @@ momentuan ikusiko da parametro horiek aldatzearen eragina.
 
 \item \cf \#111-003: Tenperatura tartea aurkeratzeko textu-formularioak.
 \\
-\nf Kalkulatu nahi den tenperaturaren tartea, $T_c$-rekiko erlatiboki adierazita.
-
-\item \cf \#111-004: Grafika sortzeko botoia.
+\nf Kalkulatu nahi den tenperaturaren tartea, $T_c$-rekiko erlatiboki adierazita. Gainera, kalkulatuko diren isotermen arteko tartea sartzeko textu formulario bat izango du. 
 \\
-\nf Grafika lehenengo aldiz generatzeko botoia. Hasieran hemendik beherako elementu guztiak ez dira ikusgai egongo eta hau lehenengo aldiz sakatzean agertuko dira. Honek erabiltzailearen atentzioa bideratzea du helburu.
+
+Agian magnitude absolutuetan jartzeko aukera ere aztertu beharko litzateke.
 
 \item \cf \#111-005: p(v,T) planoaren grafika.
 \\
@@ -145,7 +171,7 @@ momentuan ikusiko da parametro horiek aldatzearen eragina.
 
 \item \cf \#111-00A: Isoterman 'tracer' bat erakusteko checkbox-a eta hori mugitzeko slider-a.
 \\
-\nf Checkbox-a aktibatzean une horretan lan egiten ari garen isoterman puntu bat agertuko da, sliderraren bitartez isoterman zehar mugitu ahalko dena.
+\nf Checkbox-a aktibatzean une horretan lan egiten ari garen isoterman puntu bat agertuko da, sliderraren bitartez isoterman zehar mugitu ahalko dena bere posizioa ondoko textuan ikusi ahal den bitartean.
 
 \item \cf \#111-00B: Marka bat gehitzeko formularioa.
 \\
@@ -174,12 +200,24 @@ momentuan ikusiko da parametro horiek aldatzearen eragina.
 Integral guztiak analitikoki ebatziko dira.
 \\
 
-\item \cf \#111-010: Isoterma erreala kalkulatzeko botoia.
+\item \cf \#111-010: Isoterma erreala kalkulatzeko botoia (p finkatuta).
 \\
-\nf Sakatzean, programa arduratuko da presio ezberdinetarako integralak burutzeaz eta integrala 0 deneko presioa topatzeaz. Agian, prozedura grafikan ikusi daiteke.
+\nf Sakatzean, programa arduratuko da tenperatura ezberdinetarako integralak burutzeaz eta integrala 0 deneko tenperatura topatzeaz. Agian, prozedura grafikan ikusi daiteke.
 
 \item \cf \#111-011: Irudia exportatzeko botoia.
 \\
 \nf Sakatzean lortutako irudia formatu ezberdinetara exportatzea ahalbdeituko duen menu bat agertuko da.
+
+\item \cf \#111-012: Puntu kritikoa erakusteko textua.
+\\
+\nf \#111-002ko a eta b ren balioen arabera puntu kritikoa aldatzen da eta hori hemen ikusiko da.
+
+\item \cf \#111-012: Aldagai erlatibo edo absolutuak aukeratzeko botoiak.
+\\
+\nf Aldi berean bi botoietako bat baino ezin izango da sakatuta egon eta \#111-005 eguneratu beharko da aldatzean.
+
+\item \cf \#111-014: Isoterma erreala kalkulatzeko botoia (T finkatuta).
+\\
+\nf Sakatzean, programa arduratuko da presio ezberdinetarako integralak burutzeaz eta integrala 0 deneko presioa topatzeaz. Agian, prozedura grafikan ikusi daiteke.
 \end{itemize}
 \end{document}
