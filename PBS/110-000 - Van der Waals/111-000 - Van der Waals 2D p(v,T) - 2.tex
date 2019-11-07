@@ -32,7 +32,8 @@
 
 \usepackage{xcolor}
 \usepackage{titlesec}
-  
+\usepackage{float}
+ 
 \let\nf\normalfont %\nf komandoari \nf deitu  
 \newcommand{\cf}{\normalfont\sffamily}
 
@@ -49,16 +50,16 @@
 
 \pagestyle{fancy}
 \fancyhf{}
-\lhead{\cf 2019/11/04}
-\chead{\cf v 2.0}
+\lhead{\cf 2019/11/06}
+\chead{\cf v 2.1}
 \rhead{\cf \# 111-000}
 \fancyfoot[C]{\cf\thepage /\pageref{LastPage}}
 
 
 \title{\cf \# 111-000 \\ \vspace{5mm}
 					Van der Waals-en egoera ekuazioaren azterketa 2 dimentsiotan: p(v, T)\\
-\normalsize \vspace{5mm} Data: 2019/11/04 \\
- 			\vspace{3mm} Bertsioa: 2.0}
+\normalsize \vspace{5mm} Data: 2019/11/06 \\
+ 			\vspace{3mm} Bertsioa: 2.1}
 \date{}
 %\author{Jon Gabirondo López}
 
@@ -68,7 +69,7 @@
 \thispagestyle{fancy}
 %\author
 
-\begin{table}[h]
+\begin{table}[H]
     \centering
 \begin{tabularx}{\linewidth}{|c|c|L|} 
     \hline
@@ -87,6 +88,22 @@ Kendutakoak: \begin{itemize}
 \item \#111-001
 \item \#111-004
 \item \#111-007
+\end{itemize} \\ \hline
+2.1 & 2019/11/06 & Berriak: \begin{itemize}
+\item \#111-015
+\item \#111-016
+\item \#111-017
+\item \#111-018
+\end{itemize}
+Aldatutakoak: \begin{itemize}
+\item \#111-003: isoterma kopurua aukeratzeko sliderra gehitu
+\item \#111-004: berreskuratuta
+\item \#111-009: 'Undo' botoia kendu
+\end{itemize}
+Kendutakoak: \begin{itemize}
+\item \#111-002
+\item \#111-012
+\item \#111-013: Koordenatu absolutuena beste programa batean joango da. Ikusi \#111-002-ean idatzitako iruzkina.
 \end{itemize} \\ \hline
 \end{tabularx}
     \end{table}
@@ -134,17 +151,17 @@ ETAB.
 
 \begin{itemize}
 
-\item \cf \#111-002: a eta b parametroak eskuz aldatzeko sliderrak.
+\item \cf \#111-002: a eta b parametroak eskuz aldatzeko sliderrak. (KENDUTA)
 \\
 \nf $a$ eta $b$ parametroak eskuz aldatzeko aukera egongo da. Bi slider hauek \cf \# 111-005 \nf grafikara lotuta egongo dira eta
 momentuan ikusiko da parametro horiek aldatzearen eragina.
 
+\textit{Hau beste programa batera pasako dugu, zeinak koordenatu absolutuetan isotermak erakutsiko dituen. Bertan erabiltzaileak parametro hauek duten eragina ikusi ahalko du eta behin $a$ eta $b$ finkatuta dituela \cf \#111-000 \nf ri bidali. Programa honetan ere \cf \#111-001 \nf egongo da (datu basetik a eta b aukeratzeko dropdown-a) eta slider-en mugak aukeratutako materialaren araberakoak izango dira (balio errealaren \%10, esaterako) lortutako grafikak egokiak izateko.}
+
 \item \cf \#111-003: Tenperatura tartea aurkeratzeko textu-formularioak.
 \\
-\nf Kalkulatu nahi den tenperaturaren tartea, $T_c$-rekiko erlatiboki adierazita. Gainera, kalkulatuko diren isotermen arteko tartea sartzeko textu formulario bat izango du. 
+\nf Kalkulatu nahi den tenperaturaren tartea, $T_c$-rekiko erlatiboki adierazita. Gainera, kalkulatuko diren isotermen kopurua aukeratzeko slider bat egongo da. Sliderraren tartea zein Tren tartea oso mugatuta egongo dira kalkulu kopurua murrizteko. 
 \\
-
-Agian magnitude absolutuetan jartzeko aukera ere aztertu beharko litzateke.
 
 \item \cf \#111-005: p(v,T) planoaren grafika.
 \\
@@ -153,10 +170,6 @@ Agian magnitude absolutuetan jartzeko aukera ere aztertu beharko litzateke.
 \item \cf \#111-006: Lerro isoterma ezberdinekin lan egiteko slider-a.
 \\
 \nf Sliderrak une batean lan egiten ari garen lerro isotermoaren tenperatura aldatzeko balioko du.
-
-\item \cf \#111-007: Lerro isotermaren tenperatura.
-\\
-\nf Une batean lan egiten ari garen lerro isotermoaren tenperatura adieraziko du. \cf \#111-006: \nf elementuarekin lotuta egongo da.
 
 \item \cf \#111-008: Kalkulatutako isoterma guztiak erakusteko checkbox-a.
 \\
@@ -167,22 +180,23 @@ Agian magnitude absolutuetan jartzeko aukera ere aztertu beharko litzateke.
 
 \item \cf \#111-009: Isotermak gordetzeko botoiak.
 \\
-\nf Lan egiten ari zaren isoterma gordetzeko edota gordetako azkena baztertzeko botoiak.
+\nf Lan egiten ari zaren isoterma gordetzeko botoia. Isoterma bat gordetzean \cf \#111-009 \nf an aukeratu bezala agertuko da.
 
 \item \cf \#111-00A: Isoterman 'tracer' bat erakusteko checkbox-a eta hori mugitzeko slider-a.
 \\
 \nf Checkbox-a aktibatzean une horretan lan egiten ari garen isoterman puntu bat agertuko da, sliderraren bitartez isoterman zehar mugitu ahalko dena bere posizioa ondoko textuan ikusi ahal den bitartean.
+\\
+
+\textit{Tracer-a isoterma esperimental edo teorikotik mugitzeko aukera egiteko input bat jarri behar da.}
 
 \item \cf \#111-00B: Marka bat gehitzeko formularioa.
 \\
 \nf Botoiari sakatzean textu formularioan jasotako izena duen puntu bat markatuko da 'tracer'-a dagoen tokian.
 \\
 
-\textit{Markak kentzeko botoi bat eta dropdown bat jarri beharko ziren.}
-
 \item \cf \#111-00C: 'Maxwell contruction' (palankaren erregela) erakusteko checkbox-a.
 \\
-\nf Aktibatzean palankaren erregelaren erlazionatutako elementuak ikusiko dira \cf \#111-005 \nf grafikan (presio konstanteko zuzena eta koloreztatutako azalerak, azken hauek aktibatuta badaude).
+\nf Aktibatzean palankaren erregelaren erlazionatutako elementuak ikusiko dira \cf \#111-005 \nf grafikan (presio konstanteko zuzena, koloreztatutako azalerak eta fase trantsizioaren mugak, azken hauek aktibatuta badaude).
 
 \item \cf \#111-00D: presio konstanteko zuzena mugitzeko sliderra.
 \\
@@ -190,7 +204,7 @@ Agian magnitude absolutuetan jartzeko aukera ere aztertu beharko litzateke.
 
 \item \cf \#111-00E: Isotermaren eta presio konstanteko lerroaren arteko azalerak koloreztatzeko checkbox-a.
 \\
-\nf Aktibatzean aipaturiko azalerak koloreztatuko dira.
+\nf Aktibatzean presio konstantzeko lerroaren eta une horretan tenperaturaren sliderrean aukeratuta dagoen tenperaturaren arteko azalera koloreztatuko du.
 
 \item \cf \#111-00F: Isotermaren eta presio konstanteko lerroaren arteko azaleren balioak adierazteko textuak.
 \\
@@ -203,21 +217,33 @@ Integral guztiak analitikoki ebatziko dira.
 \item \cf \#111-010: Isoterma erreala kalkulatzeko botoia (p finkatuta).
 \\
 \nf Sakatzean, programa arduratuko da tenperatura ezberdinetarako integralak burutzeaz eta integrala 0 deneko tenperatura topatzeaz. Agian, prozedura grafikan ikusi daiteke.
+\\
+
+Isoterma hau kalkulatzean kalkulatutako isotermei gehituko zaie eta haiek bezala jokatuko da (agian ezingo da isoterma honera Tren sliderraren bidez iritsi).
+
 
 \item \cf \#111-011: Irudia exportatzeko botoia.
 \\
 \nf Sakatzean lortutako irudia formatu ezberdinetara exportatzea ahalbdeituko duen menu bat agertuko da.
 
-\item \cf \#111-012: Puntu kritikoa erakusteko textua.
-\\
-\nf \#111-002ko a eta b ren balioen arabera puntu kritikoa aldatzen da eta hori hemen ikusiko da.
-
-\item \cf \#111-012: Aldagai erlatibo edo absolutuak aukeratzeko botoiak.
-\\
-\nf Aldi berean bi botoietako bat baino ezin izango da sakatuta egon eta \#111-005 eguneratu beharko da aldatzean.
-
 \item \cf \#111-014: Isoterma erreala kalkulatzeko botoia (T finkatuta).
 \\
 \nf Sakatzean, programa arduratuko da presio ezberdinetarako integralak burutzeaz eta integrala 0 deneko presioa topatzeaz. Agian, prozedura grafikan ikusi daiteke.
+
+\item \cf \#111-015: Isoterma teorikoak edota esperimentalak erakusteko botoiak.
+\\
+\nf Toggle button-ak erabiliko ditugu: bitako bat edo biak sakatuta egon ahalko dira. Defektuz, isoterma teorikoak erakutsiko dira. Isoterma guztiak hasieran kalkulatuko dira, \cf \#111-004 \nf botoia sakatzean.
+
+\item \cf \#111-016: Ikusgarri dauden isotermak aukeratzeko 'aukeratzailea' (selector).
+\\
+\nf Multiple selector bat erabiliko dugu: control/shift erabiliz hainbat isoterma aukeratu ahalko ditugu eta aukeratutakoak bakarrik ikusiko dira grafikan.
+
+\item \cf \#111-017: Fase transizioko zonaldearen mugak erakusteko checkbox-a.
+\\
+\nf Hau sakatzean (eta \cf \#111-00C \nf) aktibatuta badago, fase trantsizioaren mugak adierazteko bi puntu agertuko dira isotermaren tenperatura tenperatura kritikotik behera duten eta ikusgarri dauden isoterma guztietan.
+
+\item \cf \#111-018: Sortutako marketatik ikusgarri daudenak aukeratzeko 'aukeratzailea'.
+\\
+\nf Multiple selector bat erabiliko dugu: control/shift erabiliz sortutako marketatik hainbat aukeratu ahalko ditugu eta aukeratutakoak bakarrik ikusiko dira grafikan.
 \end{itemize}
 \end{document}
