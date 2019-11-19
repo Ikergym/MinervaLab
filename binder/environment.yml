@@ -8,5 +8,6 @@ dependencies:
 - numpy
 - pip
 - matplotlib
+- qgrid
 - pip:
   - jupyterlab_latex
