@@ -11,3 +11,4 @@ dependencies:
 - qgrid
 - pip:
   - jupyterlab_latex
+  - ipyvolume
