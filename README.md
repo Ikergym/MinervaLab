@@ -1,5 +1,6 @@
-# MinervaLab
-
+<p align="center">
+  <img width="90%" src="https://github.com/jongablop/MinervaLab/blob/master/static/images/logo.png">
+</p>
 A collection of interactive simulation of Thermodinamycs and Statistical Physics.
 
 ### Try it now live:
