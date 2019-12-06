@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-A collection of interactive simulation of Thermodinamycs and Statistical Physics.
+A collection of interactive simulations of Thermodynamics and Statistical Physics.
 </p>
 
 ### Try it now live:
