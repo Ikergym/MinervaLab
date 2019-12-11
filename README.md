@@ -4,9 +4,13 @@
 
 MinervaLab is a collection of interactive simulations of Thermodynamics and Statistical Physics developed in order to provide both teachers and students with a tool to visualize some specially difficult concepts related to this subjects.
 
-### Try it now live:
+<br/>
+
+## Try it now live:
 
 Notebooks can be executed directly on [Binder](https://mybinder.org/) just by click on the file paths of the table below.
+
+<br/>
 
 ## Structure:
 
@@ -105,6 +109,8 @@ A Product Breakdown Structure (PBS) system has been used during the development 
 </table>
 </center>
 
+<br/>
+
 ## Dependencies:
 + `bqplot` (version = 0.11.6)
 + `ipywidgets`
@@ -116,9 +122,13 @@ A Product Breakdown Structure (PBS) system has been used during the development 
 + `ipyvolume`
 + `pandas`[[4]](#4)
 
+<br/>
+
 ## License
 
 This software is licensed under the GNU General Public License v3.0. See the [LICENSE](LICENSE.md) file for details.
+
+<br/>
 
 ## References
 
