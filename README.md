@@ -10,6 +10,8 @@ MinervaLab is a collection of interactive simulations of Thermodynamics and Stat
 
 Notebooks can be executed directly on [Binder](https://mybinder.org/) just by click on the file paths of the table below.
 
+You can also access the main page [here](https://mybinder.org/v2/gh/jongablop/MinervaLab/master?urlpath=%2Fapps%2Findex.ipynb).
+
 <br/>
 
 ## Structure:
@@ -65,7 +67,7 @@ A Product Breakdown Structure (PBS) system has been used during the development 
         </tr>
         <tr>
             <td>#116-000</td>
-            <td>p(v, T) in 2D</td>
+            <td>p(v, T) in 3D</td>
             <td><a href='https://mybinder.org/v2/gh/jongablop/MinervaLab/master?urlpath=%2Fnotebooks%2Fapps%2Fvan_der_waals%2Fp_v_T_3D.ipynb'>apps/van_der_waals/p_v_T_3D.ipynb</a></td>
             <td>A three-dimensional representation of the p(v,T) space during a gas-liquid phase transition (using reduced variables).</td>
         </tr>
