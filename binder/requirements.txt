@@ -5,3 +5,5 @@ ipywidgets
 notebook
 numpy
 widgetsnbextension
+ipykernel
+nbsphinx
