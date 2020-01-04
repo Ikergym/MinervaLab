@@ -10,7 +10,7 @@ Welcome to MinervaLab's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-
+   apps
 
 Indices and tables
 ==================
