@@ -10,7 +10,7 @@ Welcome to MinervaLab's documentation!
    :maxdepth: 1
    :caption: Contents:
 
-   van_der_waals/*
+   apps/van_der_waals/*
 
 Indices and tables
 ==================
