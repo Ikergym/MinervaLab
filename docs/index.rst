@@ -7,8 +7,8 @@ Welcome to MinervaLab's documentation!
 ======================================
 
 .. toctree::
-   :maxdepth: 1
-   :caption: Contents:
+   :maxdepth: 4
+   :glob:
 
    apps/van_der_waals/phase_transition_volume
 
