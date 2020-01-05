@@ -10,7 +10,7 @@ Welcome to MinervaLab's documentation!
    :maxdepth: 1
    :caption: Contents:
 
-   apps/van_der_waals/phase_transition_volume.ipynb
+   van_der_waals/*
 
 Indices and tables
 ==================
