@@ -12,5 +12,4 @@ dependencies:
 - ipywidgets
 - pandas
 - pip:
-  - jupyterlab_latex
   - ipyvolume
