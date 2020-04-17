@@ -9,6 +9,8 @@ dependencies:
 - pip
 - matplotlib
 - qgrid
+- ipywidgets
+- pandas
 - pip:
   - jupyterlab_latex
   - ipyvolume
