@@ -10,7 +10,7 @@ Welcome to MinervaLab's documentation!
    :maxdepth: 4
    :glob:
 
-   apps/van_der_waals/phase_transition_volume
+   Applications
 
 Indices and tables
 ==================
