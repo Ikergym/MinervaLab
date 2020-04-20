@@ -159,26 +159,38 @@ def experimental_isotherms(p_range, v_range, T_range, fixed_p, fixed_T):
     
     
 def get_roots(p, T):
-    """This function calculates the roots of a van der Waals
-    isotherm of a given T and set of pressures.
-    
-    Args:
-        p: Numpy array consisted of the pressures of the isotherm.\n
-        T: Value of the tenperature.\n
+    """This function finds the intersection between an isobaric curve
+       and Van der Waals equation of state for a given T.\n
+       Values of v with no physical meaning are dismissed
+       (v < 0 or complex).
 
+    Args:
+        p: Pressure of the isobaric curve.\n
+        T: Tenperature of the isotherm.\n
+
+        
     Returns:
-        roots_in_range: A list consisted of the real roots.\n
+        roots_in_range: A sorted list of the volumes in which the
+        isobaric curve intersects the isotherm.\n
     """
-    
     
     roots = np.roots([1.0, - 1.0/3.0*(1.0 + 8.0*T/p), 3.0/p, -1.0/p])
     roots_in_range = []
     
     for root in roots:
+        
+        # A third degree polynomial has 3 complex roots,
+        # but we are only interested in the ones which are
+        # purely real.
+        
         if np.isreal(root):
+            
             root = np.real(root)
+            
             if root > 0:
+                
                 roots_in_range.append(root)
+
     roots_in_range.sort()
     
     return roots_in_range
