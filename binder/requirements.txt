@@ -1,7 +1,9 @@
-bqplot
-jupyter-contrib-core
-jupyter-contrib-nbextensions
-ipywidgets
+#bqplot
+#jupyter-contrib-core
+#jupyter-contrib-nbextensions
+#ipywidgets
 notebook
-numpy
+#numpy
 widgetsnbextension
+#ipykernel
+nbsphinx
