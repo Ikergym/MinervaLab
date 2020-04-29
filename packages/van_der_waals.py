@@ -8,7 +8,7 @@ def get_relative_isotherms(v_range, T_range):
         v_range: An array containing the values of v
         (in reduced coordinates)for which the isotherms must be 
         calculated.\n
-        T_range: An array containing the values of v
+        T_range: An array containing the values of T
         (in reduced coordinates)for which the isotherms must be 
         calculated.\n
 
