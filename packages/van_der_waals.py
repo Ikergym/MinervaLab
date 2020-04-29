@@ -288,6 +288,7 @@ def find_real_fixed_T(p_values, T_values):
 
     return pressures, v_ranges
 
+
 def find_real_fixed_p(p_values, T_values):
     """This function uses Maxwell's construction to find the
        tenperatures in which phase transition happens given some
@@ -336,3 +337,96 @@ def find_real_fixed_p(p_values, T_values):
             v_ranges.append([1.0])
 
     return tenperatures, v_ranges
+
+def calculate_critic(a, b):
+    
+    """
+        This function calculates the critic point 
+        (p_c, v_c, T_c) from given a and b parameters of 
+        the Van der Waals equation of state for real gases.
+        
+        :math:`(P + a \\frac{n^2}{V^2})(V - nb) = nRT`
+        
+        :math:`p_c = \\frac{a}{27 b^2}`
+        :math:`v_c = 3b`
+        :math:`T_c = \\frac{8a}{27 b R}`
+        
+   Args:
+       a: Term related with the attraction between particles in
+       L^2 bar/mol^2.\n
+       b: Term related with the volume that is occupied by one 
+       mole of the molecules in L/mol.\n
+       
+   Returns:
+       p_c: Critical pressure in bar.\n
+       v_c: Critical volume in L/mol.\n
+       T_c: Critical tenperature in K.\n
+        
+    """
+    
+    if b == 0.0:
+        return None
+    
+    k_B = 1.3806488e-23 #m^2 kg s^-2 K^-1
+    N_A = 6.02214129e23 
+    R = 0.082 * 1.01325 #bar L mol^-1 K^-1
+    
+    p_c = a/27.0/(b**2)
+    v_c = 3.0*b
+    T_c = 8.0*a/27.0/b/R
+    
+    return p_c, v_c, T_c
+
+def get_absolute_isotherms(a, b, v_values, T_values):
+    """This function calculates the theoretical p(v, T) plane 
+        (in absolute coordinates) according to van der Waals
+        equation of state from a given range of volumes
+        and tenperatures.
+
+    Args:
+        a: Term related with the attraction between particles in
+           L^2 bar/mol^2.\n
+        b: Term related with the volume that is occupied by one 
+        mole of the molecules in L/mol.\n
+        v_values: An array containing the values of v
+        for which the isotherms must be calculated.\n
+        T_values: An array containing the values of T for which
+        the isotherms must be calculated.\n
+
+        
+    Returns:
+        isotherms: A list consisted of numpy arrays containing the
+        pressures of each isotherm.
+    """
+    isotherms = []
+
+    R = 0.082 * 1.01325 #bar L mol^-1 K^-1
+
+    for T in T_values:
+        
+        isot = []
+        
+        for v in v_values:
+            
+            p = R*T/(v - b) - (a/v**2)
+            isot = np.append(isot, p)
+            
+        isotherms.append(isot)
+        
+    return isotherms
+
+
+def bar_to_atm(p_values):
+    """This function changes the pressures of an array
+    form bars to atm.
+    
+    Args:
+        p_values: List consisted of pressures in bars.\n
+        
+    Returns:
+        p_values: List consisted of pressures in atm.\n
+    """
+    
+    p_values = np.array(p_values) * 0.9869 
+        
+    return p_values
