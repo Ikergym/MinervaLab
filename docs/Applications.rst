@@ -6,6 +6,7 @@ Applications
    :glob:
 
    apps/van_der_waals/mathematical_analysis
+   apps/van_der_waals/parameters_analysis
    apps/van_der_waals/compare_elements
    apps/van_der_waals/effect_of_a_and_b
    apps/van_der_waals/chemical_potential
