@@ -430,3 +430,36 @@ def bar_to_atm(p_values):
     p_values = np.array(p_values) * 0.9869 
         
     return p_values
+
+def get_derivative_y_by_x(y_values, x_values):
+    """This function calculates the derivative an y array
+    with respect to an x array calculated with the difference quotient.
+    
+    Args:
+        y_values: An array containing the values of y.\n
+        x_values: An array containing the values of x.\n
+
+        
+    Returns:
+        der: An array containing the values of the
+        derivative of y_values with respect to x_values.
+    """
+    
+    der = []
+    
+    
+    for i in range(len(v_values)):
+
+        v = v_values[i]
+        p = p_values[i]
+        
+        d = []
+        
+        l = np.size(p)
+        
+        for j in range(1, l):
+            d.append((p[j] - p[j-1])/(v[j] - v[j-1]))
+        
+        der.append(d)
+        
+    return der
