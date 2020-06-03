@@ -463,3 +463,25 @@ def get_derivative_y_by_x(y_values, x_values):
         der.append(d)
         
     return der
+
+def get_gibbs_energy(G_1, G_2, G_3, G_4, phi):
+    """This function calculates the representation of Gibbs energy
+    for a given constants.\n
+    
+    G = G_1*phi + G_2*phi**2 + G_3*phi**3 + G_4*phi**4
+    
+    Args:
+        G_1, G_2, G_3, G_4: Values of the parameters.
+        phi: Array consisted of the values where Gibbs energy 
+        must be calculated.
+        
+    Returns:
+        gibbs: Array containing the values of Gibbs energy.
+        
+    """
+    gibbs = []
+    
+    for f in phi:
+        gibbs = np.append(gibbs, G_1*f + G_2*f**2 + G_3*f**3 + G_4*f**4)
+        
+    return gibbs
