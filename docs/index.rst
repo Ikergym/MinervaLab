@@ -11,6 +11,7 @@ Welcome to MinervaLab's documentation!
    :glob:
 
    Applications
+   Azalpen_teorikoak
 
 Indices and tables
 ==================
