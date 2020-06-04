@@ -64,3 +64,11 @@ html_theme = "sphinx_rtd_theme"
 html_static_path = ['_static', 'static']
 
 master_doc = 'index'
+
+latex_engine = 'pdflatex'
+latex_elements = {
+    'preamble': r'''
+        \usepackage{graphicx}
+        \graphicspath{{images/}{static/}}
+        '''
+}
