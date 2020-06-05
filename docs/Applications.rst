@@ -1,6 +1,8 @@
+Applications
+============
+
 .. toctree::
    :maxdepth: 4
-   :caption: Applications
    :glob:
 
    apps/van_der_waals/mathematical_analysis
