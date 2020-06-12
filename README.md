@@ -17,6 +17,12 @@ Notebooks can be executed directly on [Binder](https://mybinder.org/) just by cl
 
 <br/>
 
+## Theoretical explanations:
+
+Theoretical explanations about phase transitions and van der Waals isotherms can be found in [Read the Docs](https://minervalab.readthedocs.io/en/latest/Azalpen_teorikoak.html) (in Basque).
+
+<br/>
+
 ## Structure:
 
 A Product Breakdown Structure (PBS) system has been used during the development of this proyect, assigning a unique code to every concept/program/element. The following chart can be useful as a guide to understand the names of the variables used along all the programs.
