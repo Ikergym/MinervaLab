@@ -3,7 +3,6 @@
 </p>
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jongablop/MinervaLab/master)
-
 [![Documentation Status](https://readthedocs.org/projects/minervalab/badge/?version=latest)](https://minervalab.readthedocs.io/en/latest/?badge=latest)
 
 ----------------------------
