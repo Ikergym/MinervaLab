@@ -1,8 +1,11 @@
 <p align="center">
   <img width="90%" src="https://github.com/jongablop/MinervaLab/blob/master/static/images/logo.png">
 </p>
+
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jongablop/MinervaLab/master)
+
 [![Documentation Status](https://readthedocs.org/projects/minervalab/badge/?version=latest)](https://minervalab.readthedocs.io/en/latest/?badge=latest)
+
 ----------------------------
 
 MinervaLab is a collection of interactive simulations of Thermodynamics and Statistical Physics developed in order to provide both teachers and students with a tool to visualize some specially difficult concepts related to this subjects.
