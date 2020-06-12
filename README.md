@@ -132,6 +132,9 @@ A Product Breakdown Structure (PBS) system has been used during the development 
 + `qgrid`
 + `ipyvolume`
 + `pandas`[[4]](#4)
++ `appmode`
+
+LaTeX is required to generate matplotlib figures. Further information can be found in the files inside `binder` folder.
 
 <br/>
 
