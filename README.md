@@ -144,6 +144,26 @@ LaTeX is required to generate matplotlib figures. Further information can be fou
 
 <br/>
 
+## How to install
+
+### Using pip:
+
+1. Install `virtualenv` and create a new virtual environment to isolate MinervaLab: [virtualenv installation guide](https://virtualenv.pypa.io/en/latest/installation.html).
+
+2. [Activate the virtual environment](https://virtualenv.pypa.io/en/latest/user_guide.html) and install Jupyter in it: [install Jupyter using pip](https://jupyter.readthedocs.io/en/latest/install.html#alternative-for-experienced-python-users-installing-jupyter-with-pip)
+
+3. Install all the dependencies listed in the section Dependencies. Some may require to activate them as a Jupyter extension.
+
+4. Git clone (using `git clone https://github.com/jongablop/MinervaLab.git`) or download the repo.
+
+5. Put it in the root of the new virtual environment and start Jupyter:
+```
+    cd MinervaLab
+    jupyter notebook
+```
+
+<br/>
+
 ## License
 
 This software is licensed under the GNU General Public License v3.0. See the [LICENSE](LICENSE.md) file for details.
