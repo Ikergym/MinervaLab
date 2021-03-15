@@ -8,7 +8,7 @@ $p_{pt} \rightarrow 0$ limitean gas guztiek balio berera konbergitzen dutela
 ikusko da. Balio hau da, hain zuzen ere, gas idealaren tenperatura.
 
 ## Aplikazioaren erabilpena
-Lehendabizi neurtu anhi den tenperatura hautatu behar da (gas idealaren eskalan).
+Lehendabizi neurtu nahi den tenperatura hautatu behar da (gas idealaren eskalan).
 Horretarako, lehenengo slider-a erabili behar da. Ondoren, gasa aukeratu behar da
 dropdown menu baten bidez. Hiru gas daude erabilgarri: $H_2$, "He" eta $N_2$.
 Hurrengo sliderraren bidez $p_{pt}$-ren balioa aukeratu daiteke (hau da, gasak
@@ -24,10 +24,10 @@ hainbat $p_{pt}$-rentzat $\Theta$-k lortzen dira. Puntu hauek lerro zuzen
 bat osatzen dute gas bakoitzarentzat. Puntu guzti hauek ezabatzeko "ezabatu puntuak"
 botoia erabili daiteke.
 
-Azkenik, puntu guztiak lotzen dituzten lerroak (gas bakotizerako lerro bat)
+Azkenik, puntu guztiak lotzen dituzten lerroak (gas bakoitzarentzat lerro bat)
 erakutsi/ezkutatu daitezke "erakutsi lerroak" checkbox-a aktibatuz/desaktibatuz.
 
 Tenperaturaren sliderra aldatuz, tenperatura ezberdinetarako errepikatu daiteke
-prozesua. Espero bezala, $T=273.16K$ aukeratuz gero, hiru gasentzako $Theta$
-berdina izango da $p_{pt}$ guztietarko (egoera termiko horren tenperatura finkoa
+prozesua. Espero bezala, $T=273.16K$ aukeratuz gero, hiru gasentzako $\Theta$
+berdina izango da $p_{pt}$ guztientzako (egoera termiko horren tenperatura finkoa
 delako hitzarmenez).
