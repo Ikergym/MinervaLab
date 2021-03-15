@@ -10,14 +10,14 @@ ikusko da. Balio hau da, hain zuzen ere, gas idealaren tenperatura.
 ## Aplikazioaren erabilpena
 Lehendabizi neurtu nahi den tenperatura hautatu behar da (gas idealaren eskalan).
 Horretarako, lehenengo slider-a erabili behar da. Ondoren, gasa aukeratu behar da
-dropdown menu baten bidez. Hiru gas daude erabilgarri: $H_2$, "He" eta $N_2$.
+dropdown menu baten bidez. Hiru gas daude erabilgarri: $H_2$, $He$ eta $N_2$.
 Hurrengo sliderraren bidez $p_{pt}$-ren balioa aukeratu daiteke (hau da, gasak
 izango duen presioa, uraren puntu hirukoitzarekin oreka termikoan dagoenean).
 
 Eskubiko irudian puntu bat azaltzen da $\Theta$ vs $p_{pt}$ grafikoan.
 $p_{pt}$ mugituz puntua mugituko da. $\Theta$-ren aldiuneko balio
 zehatza sliderraren azpian azalduko da (puntuaren gainean hover eginez ere
-x,y koordenatuak ikus daitezke).
+$x$,$y$ koordenatuak ikus daitezke).
 
 Puntuak finkatu daitezke grafikoan "gorde puntua" botoia sakatuz. Modu honetan
 hainbat $p_{pt}$-rentzat $\Theta$-k lortzen dira. Puntu hauek lerro zuzen
