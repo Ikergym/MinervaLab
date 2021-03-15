@@ -1,4 +1,4 @@
-# #121-000 Constant Volume Gas Termometer
+# #121-000 Constant Volume Gas Thermometer
 
 ## Deskribapena
 Programa honen helburua gas idealaren tenperatura nola eraikitzen den adieraztea
