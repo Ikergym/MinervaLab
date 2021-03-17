@@ -57,6 +57,7 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="#122-000 Simpe Processes" href="%23122-000%20Simple%20Processes.html" />
     <link rel="prev" title="MinervaLab 2.0: Aplikazio berriak" href="landing-page.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -101,6 +102,11 @@
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    #121-000 Constant Volume Gas Thermometer
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="%23122-000%20Simple%20Processes.html">
+   #122-000 Simpe Processes
   </a>
  </li>
 </ul>
@@ -200,33 +206,15 @@
 <h1>#121-000 Constant Volume Gas Thermometer<a class="headerlink" href="#constant-volume-gas-thermometer" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="deskribapena">
 <h2>Deskribapena<a class="headerlink" href="#deskribapena" title="Permalink to this headline">¶</a></h2>
-<p>Programa honen helburua gas idealaren tenperatura nola eraikitzen den adieraztea
-da. Horretarako gas ezberdinetarako eta hauen <span class="math notranslate nohighlight">\(p_{pt}\)</span> balio ezberdinetarako
-tenperatura enpirikoaren balio ezberdinak grafikatuko dira. Bestalde
-<span class="math notranslate nohighlight">\(p_{pt} \rightarrow 0\)</span> limitean gas guztiek balio berera konbergitzen dutela
-ikusko da. Balio hau da, hain zuzen ere, gas idealaren tenperatura.</p>
+<p>Programa honen helburua gas idealaren tenperatura nola eraikitzen den adieraztea da. Horretarako gas ezberdinetarako eta hauen <span class="math notranslate nohighlight">\(p_{pt}\)</span> balio ezberdinetarako tenperatura enpirikoaren balio ezberdinak grafikatuko dira. Bestalde <span class="math notranslate nohighlight">\(p_{pt} \rightarrow 0\)</span> limitean gas guztiek balio berera konbergitzen dutela ikusko da. Balio hau da, hain zuzen ere, gas idealaren tenperatura.</p>
 </div>
 <div class="section" id="aplikazioaren-erabilpena">
 <h2>Aplikazioaren erabilpena<a class="headerlink" href="#aplikazioaren-erabilpena" title="Permalink to this headline">¶</a></h2>
-<p>Lehendabizi neurtu nahi den tenperatura hautatu behar da (gas idealaren eskalan).
-Horretarako, lehenengo slider-a erabili behar da. Ondoren, gasa aukeratu behar da
-dropdown menu baten bidez. Hiru gas daude erabilgarri: <span class="math notranslate nohighlight">\(H_2\)</span>, <span class="math notranslate nohighlight">\(He\)</span> eta <span class="math notranslate nohighlight">\(N_2\)</span>.
-Hurrengo sliderraren bidez <span class="math notranslate nohighlight">\(p_{pt}\)</span>-ren balioa aukeratu daiteke (hau da, gasak
-izango duen presioa, uraren puntu hirukoitzarekin oreka termikoan dagoenean).</p>
-<p>Eskubiko irudian puntu bat azaltzen da <span class="math notranslate nohighlight">\(\Theta\)</span> vs <span class="math notranslate nohighlight">\(p_{pt}\)</span> grafikoan.
-<span class="math notranslate nohighlight">\(p_{pt}\)</span> mugituz puntua mugituko da. <span class="math notranslate nohighlight">\(\Theta\)</span>-ren aldiuneko balio
-zehatza sliderraren azpian azalduko da (puntuaren gainean hover eginez ere
-<span class="math notranslate nohighlight">\(x\)</span>,<span class="math notranslate nohighlight">\(y\)</span> koordenatuak ikus daitezke).</p>
-<p>Puntuak finkatu daitezke grafikoan “gorde puntua” botoia sakatuz. Modu honetan
-hainbat <span class="math notranslate nohighlight">\(p_{pt}\)</span>-rentzat <span class="math notranslate nohighlight">\(\Theta\)</span>-k lortzen dira. Puntu hauek lerro zuzen
-bat osatzen dute gas bakoitzarentzat. Puntu guzti hauek ezabatzeko “ezabatu puntuak”
-botoia erabili daiteke.</p>
-<p>Azkenik, puntu guztiak lotzen dituzten lerroak (gas bakoitzarentzat lerro bat)
-erakutsi/ezkutatu daitezke “erakutsi lerroak” checkbox-a aktibatuz/desaktibatuz.</p>
-<p>Tenperaturaren sliderra aldatuz, tenperatura ezberdinetarako errepikatu daiteke
-prozesua. Espero bezala, <span class="math notranslate nohighlight">\(T=273.16K\)</span> aukeratuz gero, hiru gasentzako <span class="math notranslate nohighlight">\(\Theta\)</span>
-berdina izango da <span class="math notranslate nohighlight">\(p_{pt}\)</span> guztientzako (egoera termiko horren tenperatura finkoa
-delako hitzarmenez).</p>
+<p>Lehenik neurtu nahi den tenperatura hautatu behar da (gas idealaren eskalan). Horretarako, lehenengo slider-a erabili behar da. Ondoren, gasa aukeratu behar da dropdown menu baten bidez. Hiru gas daude erabilgarri: <span class="math notranslate nohighlight">\(H_2\)</span>, <span class="math notranslate nohighlight">\(He\)</span> eta <span class="math notranslate nohighlight">\(N_2\)</span>. Hurrengo sliderraren bidez <span class="math notranslate nohighlight">\(p_{pt}\)</span>-ren balioa aukeratu daiteke (hau da, gasak izango duen presioa, uraren puntu hirukoitzarekin oreka termikoan dagoenean).</p>
+<p>Eskubiko irudian puntu bat azaltzen da <span class="math notranslate nohighlight">\(\Theta\)</span> vs <span class="math notranslate nohighlight">\(p_{pt}\)</span> grafikoan. <span class="math notranslate nohighlight">\(p_{pt}\)</span> mugituz puntua mugituko da. <span class="math notranslate nohighlight">\(\Theta\)</span>-ren aldiuneko balio zehatza sliderraren azpian azalduko da (puntuaren gainean hover eginez ere <span class="math notranslate nohighlight">\(x\)</span>,<span class="math notranslate nohighlight">\(y\)</span> koordenatuak ikus daitezke).</p>
+<p>Puntuak finkatu daitezke grafikoan “gorde puntua” botoia sakatuz. Modu honetan hainbat <span class="math notranslate nohighlight">\(p_{pt}\)</span>-rentzat <span class="math notranslate nohighlight">\(\Theta\)</span>-k lortzen dira. Puntu hauek lerro zuzen bat osatzen dute gas bakoitzarentzat. Puntu guzti hauek ezabatzeko “ezabatu puntuak” botoia erabili daiteke.</p>
+<p>Azkenik, puntu guztiak lotzen dituzten lerroak (gas bakoitzarentzat lerro bat) erakutsi/ezkutatu daitezke “erakutsi lerroak” checkbox-a aktibatuz/desaktibatuz.</p>
+<p>Tenperaturaren sliderra aldatuz, tenperatura ezberdinetarako errepikatu daiteke prozesua. Espero bezala, <span class="math notranslate nohighlight">\(T=273.16K\)</span> aukeratuz gero, hiru gasentzako <span class="math notranslate nohighlight">\(\Theta\)</span> berdina izango da <span class="math notranslate nohighlight">\(p_{pt}\)</span> guztientzako (egoera termiko horren tenperatura finkoa delako hitzarmenez).</p>
 </div>
 </div>
 
@@ -256,6 +244,7 @@ delako hitzarmenez).</p>
         <div class='prev-next-bottom'>
             
     <a class='left-prev' id="prev-link" href="landing-page.html" title="previous page">MinervaLab 2.0: Aplikazio berriak</a>
+    <a class='right-next' id="next-link" href="%23122-000%20Simple%20Processes.html" title="next page">#122-000 Simpe Processes</a>
 
         </div>
         

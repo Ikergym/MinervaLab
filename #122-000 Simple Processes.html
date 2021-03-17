@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index &#8212; Gas ideala alpikazioak</title>
+    <title>#122-000 Simpe Processes &#8212; Gas ideala alpikazioak</title>
     
   <link rel="stylesheet" href="_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
@@ -55,8 +55,9 @@
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <link rel="index" title="Index" href="#" />
+    <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="#121-000 Constant Volume Gas Thermometer" href="%23121-000%20Constant%20Volume%20Gas%20Thermometer.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -96,14 +97,14 @@
   Gas ideala
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="current nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="%23121-000%20Constant%20Volume%20Gas%20Thermometer.html">
    #121-000 Constant Volume Gas Thermometer
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="%23122-000%20Simple%20Processes.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    #122-000 Simpe Processes
   </a>
  </li>
@@ -139,6 +140,23 @@
             </button>
             
             
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/#122-000 Simple Processes.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
             <!-- Source interaction buttons -->
 
 
@@ -155,6 +173,26 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i>
+            Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#deskribapena">
+   Deskribapena
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#aplikazioaren-erabilera">
+   Aplikazioaren erabilera
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
         </div>
     </div>
 </div>
@@ -163,19 +201,57 @@
         
               <div>
                 
-
-<h1 id="index">Index</h1>
-
-<div class="genindex-jumpbox">
- 
+  <div class="section" id="simpe-processes">
+<h1>#122-000 Simpe Processes<a class="headerlink" href="#simpe-processes" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="deskribapena">
+<h2>Deskribapena<a class="headerlink" href="#deskribapena" title="Permalink to this headline">¶</a></h2>
+<p>Aplikazio honen helburua gas idealetan lau prozesu arruntenak aztertzea da: isokoroa, isobaroa, isotermoa eta adiabatikoa. Horretarako, hasierako puntu batetik abiatuz, lau prozesuak irudikatuko dira <span class="math notranslate nohighlight">\(pV\)</span> diagrama batean. Prozesu bakoitzak mugatzen duen kurba erakusteaz gain, bakoitzari dagokion lana beroa eta energia aldaketa ere kalkulatuko dira.</p>
+</div>
+<div class="section" id="aplikazioaren-erabilera">
+<h2>Aplikazioaren erabilera<a class="headerlink" href="#aplikazioaren-erabilera" title="Permalink to this headline">¶</a></h2>
+<p>Lehenik, gas mota finkatu behar da (monoatomikoa edo diatomikoa) dropdown menu baten bidez. Ondoren mol kopurua finkatu behar da slider bat erabiliz. Behin gasa zehaztuta, hasierako puntuaren bolumena (<span class="math notranslate nohighlight">\(V_i\)</span>) eta presioa (<span class="math notranslate nohighlight">\(p_i\)</span>) finkatzeko slider bana erabili behar dira. Hasierako parametro hauek definituta, hasierako puntuaren tenperatura finkatuta geratzen da, gas idealaren oreka-ekuazio mekanikoa dela eta:</p>
+<div class="math notranslate nohighlight">
+\[ pV = NRT \]</div>
+<p>Grafikan lau prozesuak grafikatuko dira kolore ezberdinez. Horietako bat aukeratzeko beste dropdown menu bat erabili behar da. Aukeratutako prozesuaren lerroa opakoa egingo da eta beste hiruak gardenagoak izango dira. Grafikaren azpian amaierako egoera aukeratzeko kontrolak daude:</p>
+<ul class="simple">
+<li><p>Prozesua isokoroa bada: bukaerako bolumena finkatuta dago hasierako bolumenaren berdina izan behar delako, beraz, <span class="math notranslate nohighlight">\(V_f\)</span>-ri dagokion sliderra blokeatuta egongo da. Kasu horretan bukaerako presioa zehazteko slider bat agertuko da (hau zehaztean bukaerako tenperatura ere zehaztuta geratuko da oreka-ekuazioarengatik).</p></li>
+<li><p>Prozesua isokoroa ez bada: bukaerako bolumena zehazteko sliderra desblokeatuko da. Bukerako presioa eta tenperatura zehaztuta geratuko dira egoera-ekuazioa eta prozesuari dagokion ekuazioarengatik.</p></li>
+</ul>
+<p>Eskubian prozesuan zehar egindako lana, trukatutako beroa eta sistemaren energia aldaketa erakusten dira. Espero bezala:</p>
+<ul class="simple">
+<li><p>Prozesu isokoroetan lana nulua da</p></li>
+<li><p>Prozesu isotermoetan energiaren aldaketa nulua da</p></li>
+<li><p>Prozesu adiabatikoetan trukatutako beroa nulua da (hau ez da guztiz egia izango, integrazio numerikoa egiteko erabitlzen den zehaztasunaren araberakoa baita, baina dena den, energia aldaketa baino magnitude orden batzuk baxuagoa izango da)</p></li>
+</ul>
+</div>
 </div>
 
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               
         
         <div class='prev-next-bottom'>
             
+    <a class='left-prev' id="prev-link" href="%23121-000%20Constant%20Volume%20Gas%20Thermometer.html" title="previous page">#121-000 Constant Volume Gas Thermometer</a>
 
         </div>
         
