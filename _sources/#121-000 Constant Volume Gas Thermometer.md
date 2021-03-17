@@ -1,5 +1,9 @@
 # #121-000 Constant Volume Gas Thermometer
 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Ikergym/MinervaLab/b561bc2db367159819e9518d9466bdbc39e58a7e?filepath=apps%2Fideal_gas%2FConstant%20Volume%20Gas%20Thermometer.ipynb)
+
+
+
 ## Deskribapena
 Programa honen helburua gas idealaren tenperatura nola eraikitzen den adieraztea da. Horretarako gas ezberdinetarako eta hauen $p_{pt}$ balio ezberdinetarako tenperatura enpirikoaren balio ezberdinak grafikatuko dira. Bestalde $p_{pt} \rightarrow 0$ limitean gas guztiek balio berera konbergitzen dutela ikusko da. Balio hau da, hain zuzen ere, gas idealaren tenperatura.
 
