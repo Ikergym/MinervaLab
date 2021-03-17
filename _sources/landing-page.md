@@ -13,7 +13,24 @@ Tabla honetan dagoeneko garatuta dauden aplikazioen **kodeak** eta **izenak** ag
 
 Behin notebook-a exekutatuta, **kodea** azalduko da; hau exekutatzeko: **Cell -> Run All**.
 
-<center>
+
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
 <table >
     <thead>
         <tr>
@@ -35,6 +52,5 @@ Behin notebook-a exekutatuta, **kodea** azalduko da; hau exekutatzeko: **Cell ->
         </tr>
     </tbody>
 </table>
-</center>
 
 <br/>
