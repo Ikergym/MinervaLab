@@ -52,7 +52,7 @@ tr:nth-child(even) {
         </tr>
         <tr>
             <td><a href="%23123-000%20Polytropic%20Processes.html">#123-000</a></td>
-            <td>Simple Processes</td>
+            <td>Polytropic Processes</td>
             <td><a class="reference external" href="https://mybinder.org/v2/gh/Ikergym/MinervaLab/AplikazioBerriak?filepath=apps%2Fideal_gas%2FPolytropic%20Processes.ipynb"><img alt="Binder" src="https://mybinder.org/badge_logo.svg"></a></td>
         </tr>
     </tbody>
