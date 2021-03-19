@@ -39,7 +39,7 @@ Behin notebook-a exekutatuta, **kodea** azalduko da; hau exekutatzeko: **Cell ->
         <tr>
             <td><a href="https://ikergym.github.io/MinervaLab/%23123-000%20Polytropic%20Processes.html">#123-000</a></td>
             <td>Simple Processes</td>
-            <td><a class="reference external" href="https://mybinder.org/v2/gh/Ikergym/MinervaLab/7da11ec6d08014af702ea7892b24ffdc6896ba85?filepath=apps%2Fideal_gas%2FPolytropic%20Process.ipynb"><img alt="Binder" src="https://mybinder.org/badge_logo.svg"></a></td>
+            <td><a class="reference external" href="https://mybinder.org/v2/gh/Ikergym/MinervaLab/AplikazioBerriak?filepath=apps%2Fideal_gas%2FPolytropic%20Process.ipynb"><img alt="Binder" src="https://mybinder.org/badge_logo.svg"></a></td>
         </tr>
     </tbody>
 </table>
