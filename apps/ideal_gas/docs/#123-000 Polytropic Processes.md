@@ -1,6 +1,6 @@
 # #123-000 Polytropic Processes
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Ikergym/MinervaLab/AplikazioBerriak?filepath=apps%2Fideal_gas%2FPolytropic%20Process.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Ikergym/MinervaLab/AplikazioBerriak?filepath=apps%2Fideal_gas%2FPolytropic%20Processes.ipynb)
 
 ## Deskribapena
 Aplikazio honen helburua gas idealetan prozesu politropikoak aztertzea da. Horretarako, hasierako puntu batetik abiatuz, $j $ indize ezberdineko zenbait prozesu irudikatuko dira $pV$ diagrama batean. Prozesu bakoitzak mugatzen duen kurba erakusteaz gain, bakoitzari dagokion lana beroa eta energia aldaketa ere kalkulatuko dira.
