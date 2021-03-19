@@ -1,6 +1,6 @@
 # #122-000 Simpe Processes
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Ikergym/MinervaLab/b561bc2db367159819e9518d9466bdbc39e58a7e?filepath=apps%2Fideal_gas%2FSimple%20Processes.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Ikergym/MinervaLab/7da11ec6d08014af702ea7892b24ffdc6896ba85?filepath=apps%2Fideal_gas%2FSimple%20Processes.ipynb)
 
 ## Deskribapena
 Aplikazio honen helburua gas idealetan lau prozesu arruntenak aztertzea da: isokoroa, isobaroa, isotermoa eta adiabatikoa. Horretarako, hasierako puntu batetik abiatuz, lau prozesuak irudikatuko dira $pV$ diagrama batean. Prozesu bakoitzak mugatzen duen kurba erakusteaz gain, bakoitzari dagokion lana beroa eta energia aldaketa ere kalkulatuko dira.
