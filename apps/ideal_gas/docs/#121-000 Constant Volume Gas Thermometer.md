@@ -1,6 +1,6 @@
 # #121-000 Constant Volume Gas Thermometer
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Ikergym/MinervaLab/b561bc2db367159819e9518d9466bdbc39e58a7e?filepath=apps%2Fideal_gas%2FConstant%20Volume%20Gas%20Thermometer.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Ikergym/MinervaLab/7da11ec6d08014af702ea7892b24ffdc6896ba85?filepath=apps%2Fideal_gas%2FConstant%20Volume%20Gas%20Thermometer.ipynb)
 
 
 
