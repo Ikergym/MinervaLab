@@ -47,6 +47,12 @@ Behin notebook-a exekutatuta, **kodea** azalduko da; hau exekutatzeko: **Cell ->
             <td><a class="reference external" href="https://mybinder.org/v2/gh/Ikergym/MinervaLab/AplikazioBerriak?filepath=apps%2Fideal_gas%2FPolytropic%20Processes.ipynb"><img alt="Binder" src="https://mybinder.org/badge_logo.svg"></a></td>
             <td><a class="reference external" href=https://github.com/Ikergym/MinervaLab/blob/AplikazioBerriak/apps/ideal_gas/Polytropic%20Processes.ipynb>Ikusi</td>
         </tr>
+        <tr>
+            <td><a href="https://ikergym.github.io/MinervaLab/%23125-000%20Thermodynamic%20Cycles.html">#125-000</a></td>
+            <td>Thermodynamic Cycles</td>
+            <td><a class="reference external" href="https://mybinder.org/v2/gh/Ikergym/MinervaLab/AplikazioBerriak?filepath=apps%2Fideal_gas%2FZiklo%20Termodinamikoak.ipynb"><img alt="Binder" src="https://mybinder.org/badge_logo.svg"></a></td>
+            <td><a class="reference external" href=https://github.com/Ikergym/MinervaLab/blob/AplikazioBerriak/apps/ideal_gas/Ziklo%20Termodinamikoak.ipynb>Ikusi</td>
+        </tr>
     </tbody>
 </table>
 </center>
