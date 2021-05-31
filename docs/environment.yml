@@ -1,0 +1,17 @@
+name: minervalab_docs
+channels:
+  - conda-forge
+dependencies:
+- appmode
+- bqplot=0.11.6
+- scipy
+- numpy
+- pip
+- matplotlib
+- qgrid
+- ipywidgets
+- pandas
+- jupyter_sphinx
+- latex_envs
+- pip:
+  - ipyvolume
