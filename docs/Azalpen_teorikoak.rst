@@ -1,5 +1,5 @@
 Azalpen teorikoak
-============
+=================
 
 .. toctree::
    :maxdepth: 4

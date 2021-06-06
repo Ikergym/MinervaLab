@@ -7,3 +7,4 @@ Applications
 
    Ideal_Gas
    Van_der_Waals
+   Fermi_Gas
