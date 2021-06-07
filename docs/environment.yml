@@ -14,4 +14,4 @@ dependencies:
 - jupyter_sphinx
 - pip:
   - ipyvolume
-  - latex_envs
+  - jupyter_latex_envs
