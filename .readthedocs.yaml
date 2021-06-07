@@ -10,4 +10,4 @@
     configuration: docs/conf.py
 
   conda:
-    environment: docs/environment.py
+    environment: docs/environment.yml
