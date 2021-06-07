@@ -12,7 +12,6 @@ dependencies:
 - ipywidgets
 - pandas
 - jupyter_sphinx
+- latex_envs
 - pip:
   - ipyvolume
-  - nbsphinx
-  - latex_envs
