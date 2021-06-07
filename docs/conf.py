@@ -18,11 +18,11 @@ sys.path.insert(0, os.path.abspath('.'))
 # -- Project information -----------------------------------------------------
 
 project = 'MinervaLab'
-copyright = '2020, Jon Gabirondo-López'
-author = 'Jon Gabirondo-López'
+copyright = '2021, Iker Gonzalez'
+author = 'Iker Gonzalez'
 
 # The full version, including alpha/beta/rc tags
-release = '0.1'
+release = '2.0'
 
 
 # -- General configuration ---------------------------------------------------
