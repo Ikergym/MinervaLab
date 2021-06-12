@@ -1,126 +1,87 @@
-<p align="center">
-  <img width="90%" src="https://github.com/jongablop/MinervaLab/blob/master/static/images/logo.png">
-</p>
+# MinervaLab 2.0 Bertsioaren biltegia
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jongablop/MinervaLab/master)
-[![Documentation Status](https://readthedocs.org/projects/minervalab/badge/?version=latest)](https://minervalab.readthedocs.io/en/latest/?badge=latest)
+[![Documentation Status](https://readthedocs.org/projects/minervalab/badge/?version=latest)](https://minervalab-v20.readthedocs.io/en/latest/)
 
 ----------------------------
 
-MinervaLab is a collection of interactive simulations of Thermodynamics and Statistical Physics developed in order to provide both teachers and students with a tool to visualize some specially difficult concepts related to this subjects.
+MinervaLab "Termodinamika eta Fisika Estatistikoa" irakasgaiaren irakaskuntza-prozesuan laguntzeko euskarri digitala da. Zehatzago, aplikazio-sorta bat da, irakasgaian zehar agertzen diren adierazpide grafikoak modu interaktiboan irudikatzen dituena, besteak beste. Proiektuaren lehen bertsioa 2020ko ekainean argitaratu zuen Jon Gabirondo López-ek bere Fisikako Graduko GrALean.
+
+Jatorrizko proiektuaren bitlegia [hemen](https://github.com/jongablop/MinervaLab) topa daiteke:
+
+
 
 <br/>
 
-## Try it now live:
+## Exekutatu sarean
 
-Notebooks can be executed directly on [Binder](https://mybinder.org/) just by click on the file paths of the table below.
+Notebook-ak nabigatzailean exekutatu daitezke [Binder](https://mybinder.org/) erabiliz, aplikazio bakoitzaren helbidean klikatuta.
 
-<br/>
-
-## Theoretical explanations:
-
-Theoretical explanations about phase transitions and van der Waals isotherms can be found in [Read the Docs](https://minervalab.readthedocs.io/en/latest/Azalpen_teorikoak.html) (in Basque).
 
 <br/>
 
-## Structure:
+## 2.0 Bertsioko aplikazio berriak:
 
-A Product Breakdown Structure (PBS) system has been used during the development of this proyect, assigning a unique code to every concept/program/element. The following chart can be useful as a guide to understand the names of the variables used along all the programs.
+Aplikazioei erreferentzia egiteko, zenbakizko kode bat esleitu zaio aplikazio bakoitzari, lehenengo bertsioko numerazio-sistemari jarraituz. Tabla honetan bigarren bertsiorako garatutako aplikazioen zerrenda aurki daiteke. Aplikazioaren helbidean klikatuz gero, Binderreko notebook exekutagarria irekiko da. Iturri-kodea ikusteko biltegi honetan bertan ireki daitezke aplikazioak, dagokien helbidean
 
 <center>
 <table >
     <thead>
         <tr>
-            <th>PBS #</th>
-            <th>Concept</th>
-            <th>File path</th>
-            <th>Description</th>
+            <th>Kodea #</th>
+            <th>Kontzeptua</th>
+            <th>Helbidea</th>
+            <th>Deskribapena</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td width="20%">#110-000</td>
-            <td>Van der Waals equation of state</td>
-            <td>apps/van_der_waals</td>
-            <td>A collection of programs aimed to visualize the different aspects of the phase transitions of a gas that follows the Van der Waals equation of state.</td>
+            <td>#121-000</td>
+            <td>Bolumen konstanteko gas termometroa eta zero printzipioa</td>
+            <td><a href='https://mybinder.org/v2/gh/Ikergym/MinervaLab/master?filepath=apps%2Fideal_gas%2Fgas_thermometer.ipynb'>apps/ideal_gas/gas_thermometer.ipynb</a></td>
+            <td>Gas ezberdinentzako tenperatura enpirikoaren neurketak presio ezberdinetarako.</td>
         </tr>
         <tr>
-            <td>#111-000</td>
-            <td>Maxwell’s construction on van der Waals isotherms</td>
-            <td><a href='https://mybinder.org/v2/gh/jongablop/MinervaLab/master?urlpath=%2Fapps%2Fapps%2Fvan_der_waals%2Fp_v_2D.ipynb'>apps/van_der_waals/p_v_2D.ipynb</a></td>
-            <td>A two-dimensional representation of the p(v,T) space during a gas-liquid phase transition (using reduced variables).</td>
+            <td>#122-000</td>
+            <td>Prozesu kuasiestatiko sinpleak</td>
+            <td><a href='https://mybinder.org/v2/gh/Ikergym/MinervaLab/master?filepath=apps%2Fideal_gas%2Fsimple_processes.ipynb'>apps/ideal_gas/simple_processes.ipynb</a></td>
+            <td>Gas idealaren kasurako prozesu isokoro, isobaro, isotermo eta adiabatikoen azterketa.</td>
         </tr>
         <tr>
-            <td>#112-000</td>
-            <td>Visualization of molar volume during a liquid-gas phase transition</td>
-            <td><a href='https://mybinder.org/v2/gh/jongablop/MinervaLab/master?urlpath=%2Fapps%2Fapps%2Fvan_der_waals%2Fphase_transition_volume.ipynb'>apps/van_der_waals/phase_transition_volume.ipynb</a></td>
-            <td>A visualization of how each phase volume changes during a phase transition.</td>
+            <td>#123-000</td>
+            <td>Prozesu politropikoak</td>
+            <td><a href='https://mybinder.org/v2/gh/Ikergym/MinervaLab/master?filepath=apps%2Fideal_gas%2Fpolytropic_processes.ipynb'>apps/ideal_gas/polytropic_processes.ipynb</a></td>
+            <td>Gas idealaren kasurako, indize ezberdineko prozesu politropikoen azterketa.</td>
         </tr>
         <tr>
-            <td>#113-000</td>
-            <td>Critical points for various fluids</td>
-            <td><a href='https://mybinder.org/v2/gh/jongablop/MinervaLab/master?urlpath=%2Fapps%2Fapps%2Fvan_der_waals%2Fcritical_points.ipynb'>apps/van_der_waals/critical_points.ipynb</a></td>
-            <td>An interactive database of Van der Waals equation's a and b parameters that allows to visualize the critical points of a sort of elements.</td>
+            <td>#124-000</td>
+            <td>Ziklo termodinamikoak eta motore termikoak</td>
+            <td><a href='https://mybinder.org/v2/gh/Ikergym/MinervaLab/master?filepath=apps%2Fideal_gas%2Fthermodynamic_cycles.ipynb'>apps/ideal_gas/thermodynamic_cycles.ipynb</a></td>
+            <td>Carnot, Diesel eta Stirling zikloen azterketa.</td>
         </tr>
         <tr>
-            <td>#114-000</td>
-            <td>Effect of a and b in van der Waals isotherms</td>
-            <td><a href='https://mybinder.org/v2/gh/jongablop/MinervaLab/master?urlpath=%2Fapps%2Fapps%2Fvan_der_waals%2Feffect_of_a_and_b.ipynb'>apps/van_der_waals/effect_of_a_and_b.ipynb</a></td>
-            <td>A sort of representations of p(v,T) which gives the opportunity to interact with the a and b parameters in absolute variables.</td>
+            <td>#131-000</td>
+            <td>Banaketa estatistikoak</td>
+            <td><a href='https://mybinder.org/v2/gh/Ikergym/MinervaLab/master?filepath=apps%2Ffermi_gas%2Fdistribution_comparison.ipynb'>apps/fermi_gas/distribution_comparison.ipynb</a></td>
+            <td>Fermi-Dirac, Bose-Einstein eta Maxwell-Boltzmann banaketa-funtzioen arteko konparazioa.</td>
         </tr>
         <tr>
-            <td>#115-000</td>
-            <td>Compare elements’ isotherms</td>
-            <td><a href='https://mybinder.org/v2/gh/jongablop/MinervaLab/master?urlpath=%2Fapps%2Fapps%2Fvan_der_waals%2Fcompare_elements.ipynb'>apps/van_der_waals/compare_elements.ipynb</a></td>
-            <td>A program which allows to compare the p(v,T) isotherms for a given sort of elements.</td>
+            <td>#132-000</td>
+            <td>Fermi-Dirac banaketa eta potentzial kimikoa</td>
+            <td><a href='https://mybinder.org/v2/gh/Ikergym/MinervaLab/master?filepath=apps%2Ffermi_gas%2Fchemical_potential.ipynb'>apps/fermi_gas/chemical_potential.ipynb</a></td>
+            <td>Fermi-Dirac banaketaren bidez potentzial kimikoaren esangura ulertzeko aplikazioa.</td>
         </tr>
         <tr>
-            <td>#116-000</td>
-            <td>Van der Waals isotherms in 3D</td>
-            <td><a href='https://mybinder.org/v2/gh/jongablop/MinervaLab/master?urlpath=%2Fapps%2Fapps%2Fvan_der_waals%2Fp_v_T_3D.ipynb'>apps/van_der_waals/p_v_T_3D.ipynb</a></td>
-            <td>A three-dimensional representation of the p(v,T) space during a gas-liquid phase transition (using reduced variables).</td>
+            <td>#133-000</td>
+            <td>Fermi-Dirac banaketa eta egoera dentsitatea</td>
+            <td><a href='https://mybinder.org/v2/gh/Ikergym/MinervaLab/master?filepath=apps%2Ffermi_gas%2Fdensity_of_states.ipynb'>apps/fermi_gas/density_of_states.ipynb</a></td>
+            <td>Egoera-dentsitatearen eragina ulertzeko aplikazioa, Fermi-Dirac banaketaren baitan.</td>
         </tr>
         <tr>
-            <td>#117-000</td>
-            <td>Chemical potential of a van der Waals real gas</td>
-            <td><a href='https://mybinder.org/v2/gh/jongablop/MinervaLab/master?urlpath=%2Fapps%2Fapps%2Fvan_der_waals%2Fchemical_potential.ipynb'>apps/van_der_waals/chemical_potential.ipynb</a></td>
-            <td>A program that allows to construct the chemical potential starting from the p(v,T) space.</td>
-        </tr>
-        <tr>
-            <td>#118-000</td>
-            <td>Mathematical analysis of the van der Waals isotherms</td>
-            <td><a href='https://mybinder.org/v2/gh/jongablop/MinervaLab/master?urlpath=%2Fapps%2Fapps%2Fvan_der_waals%2Fmathematical_analysis.ipynb'>apps/van_der_waals/mathematical_analysis.ipynb</a></td>
-            <td>A visualization of Vander Waals' equation of state from a analytical point of view.</td>
-        </tr>
-        <tr>
-            <td>#119-000</td>
-            <td>Mathematical analysis of the effect of a and b parameters</td>
-            <td><a href='https://mybinder.org/v2/gh/jongablop/MinervaLab/master?urlpath=%2Fapps%2Fapps%2Fvan_der_waals%2Fparameters_analysis.ipynb'>apps/van_der_waals/parameters_analysis.ipynb</a></td>
-            <td>A visualization of Vander Waals' equation of state from a analytical point of view in order to study the effect of a and b parameters on the mathematical function.</td>
-        </tr>
-        <tr>
-            <td>#11A-000</td>
-            <td>Stability condition on van der Waals isotherms</td>
-            <td><a href='https://mybinder.org/v2/gh/jongablop/MinervaLab/master?urlpath=%2Fapps%2Fapps%2Fvan_der_waals%2Fstability.ipynb'>apps/van_der_waals/stability.ipynb</a></td>
-            <td>A visualization of dp/dv in order to study the stability of the system.</td>
-        </tr>
-        <tr>
-            <td>#11B-000</td>
-            <td>p-T plane and Gibbs free energy</td>
-            <td><a href='https://mybinder.org/v2/gh/jongablop/MinervaLab/master?urlpath=%2Fapps%2Fapps%2Fvan_der_waals%2Fp_T_2D.ipynb'>apps/van_der_waals/p_T_2D.ipynb</a></td>
-            <td>An interactive visualization of the p(T) plane and the Gibbs free energy for a gas-liquid phase transition.</td>
-        </tr>
-        <tr>
-            <td>#11C-000</td>
-            <td>Effect of a and b in van der Waals isotherms (reduced variables)</td>
-            <td><a href='https://mybinder.org/v2/gh/jongablop/MinervaLab/master?urlpath=%2Fapps%2Fapps%2Fvan_der_waals%2Feffect_of_a_and_b_reduced.ipynb'>apps/van_der_waals/effect_of_a_and_b_reduced.ipynb</a></td>
-            <td>A sort of representations of p(v,T) which gives the opportunity to interact with the a and b parameters in reduced variables.</td>
-        </tr>
-        <tr>
-            <td>#11D-000</td>
-            <td>Change in molar entropy during a first-order phase transition</td>
-            <td><a href='https://mybinder.org/v2/gh/jongablop/MinervaLab/master?urlpath=%2Fapps%2Fapps%2Fvan_der_waals%2Fentropy.ipynb'>apps/van_der_waals/entropy.ipynb</a></td>
-            <td>The aim of this notebook is to visualize the change in molar entropy during a first-orden liquid-gas transition.</td>
+            <td>#134-000</td>
+            <td>Bero ahalmen elektronikoa metaletan</td>
+            <td><a href='https://mybinder.org/v2/gh/Ikergym/MinervaLab/master?filepath=apps%2Ffermi_gas%2Fspecific_heat.ipynb'>apps/fermi_gas/specific_heat.ipynb</a></td>
+            <td>Fermi-Dirac banaketa erabiliz, metalen tenperatura baxuko bero-ahalmena kalkulatzeko tresna.</td>
         </tr>
     </tbody>
 </table>
@@ -128,35 +89,33 @@ A Product Breakdown Structure (PBS) system has been used during the development 
 
 <br/>
 
-## Dependencies:
+## Dependentziak:
 + `bqplot` (version = 0.11.6)
 + `ipywidgets`
 + `scipy`
-+ `numpy`[[1]](#1)[[2]](#2)
++ `numpy`
 + `pip`
-+ `matplotlib`[[3]](#3)
++ `matplotlib`
 + `qgrid`
 + `ipyvolume`
-+ `pandas`[[4]](#4)
++ `pandas`
 + `appmode`
-
-LaTeX is required to generate matplotlib figures. Further information can be found in the files inside `binder` folder.
 
 <br/>
 
-## How to install
+## Nola instalatu
 
-### Using pip:
+### Pip erabiliz:
 
-1. Install `virtualenv` and create a new virtual environment to isolate MinervaLab: [virtualenv installation guide](https://virtualenv.pypa.io/en/latest/installation.html).
+1. Instalatu `virtualenv` eta sortu ingurune birtual berri bat MinervaLab-en instalazioa isolatzeko: [virtualenv installation guide](https://virtualenv.pypa.io/en/latest/installation.html).
 
-2. [Activate the virtual environment](https://virtualenv.pypa.io/en/latest/user_guide.html) and install Jupyter in it: [install Jupyter using pip](https://jupyter.readthedocs.io/en/latest/install.html#alternative-for-experienced-python-users-installing-jupyter-with-pip)
+2. [Aktibatu ingurune birtuala](https://virtualenv.pypa.io/en/latest/user_guide.html) eta Jupyter instalatu: [install Jupyter using pip](https://jupyter.readthedocs.io/en/latest/install.html#alternative-for-experienced-python-users-installing-jupyter-with-pip).
 
-3. Install all the dependencies listed in the section Dependencies. Some may require to activate them as a Jupyter extension.
+3. Instalatu aipatutako dependentzia guztiak.
 
-4. Git clone (using `git clone https://github.com/jongablop/MinervaLab.git`) or download the repo.
+4. Biltegia klonatu (erabili `git clone https://github.com/jongablop/MinervaLab.git`) edo biltegia deskargatu bestela.
 
-5. Put it in the root of the new virtual environment and start Jupyter:
+5. Ingurunearen `root` karpetan jarri eta exekutatu Jupyter:
 ```
     cd MinervaLab
     jupyter notebook
@@ -164,35 +123,8 @@ LaTeX is required to generate matplotlib figures. Further information can be fou
 
 <br/>
 
-## License
+## Lizentzia
 
-This software is licensed under the GNU General Public License v3.0. See the [LICENSE](LICENSE.md) file for details.
+Software hau GNU General Public License v3.0. lizentziapean argitaratuta dago. Informazio gehiagorako ikus [LIZENTZIA](LICENSE.md).
 
 <br/>
-
-## References
-
-
-<a id="1">[1]</a>
-Travis E. Oliphant.
-<strong>A guide to NumPy</strong>,
-USA: Trelgol Publishing, (2006).
-
-<a id="2">[2]</a> Stéfan van der Walt, S. Chris Colbert and Gaël Varoquaux.
-<strong>The NumPy Array: A Structure for Efficient Numerical Computation</strong>,
-Computing in Science &amp; Engineering, <strong>13</strong>, 22-30 (2011),
-<a class="reference external" href="http://dx.doi.org/10.1109/MCSE.2011.37">DOI:10.1109/MCSE.2011.37</a> (<a class="reference external" href="http://scitation.aip.org/content/aip/journal/cise/13/2/10.1109/MCSE.2011.37">publisher link</a>)
-
-<a id="3">[3]</a>
- J. D. Hunter, <strong>Matplotlib: A 2D Graphics Environment</strong>, Computing in Science & Engineering, vol. 9, no. 3, pp. 90-95, 2007
-
- <a id="4">[4]</a>
- Wes McKinney.
- <strong>Data Structures for Statistical Computing in Python</strong>,
- Proceedings of the 9th Python in Science Conference, 51-56 (2010)
- (<a class="reference external" href="http://conference.scipy.org/proceedings/scipy2010/mckinney.html">publisher link</a>)</p></li>
-
-Fernando Pérez and Brian E. Granger.
-<strong>IPython: A System for Interactive Scientific Computing</strong>,
-Computing in Science &amp; Engineering, <strong>9</strong>, 21-29 (2007),
-<a class="reference external" href="https://doi.org/10.1109/MCSE.2007.53">DOI:10.1109/MCSE.2007.53</a> (<a class="reference external" href="http://scitation.aip.org/content/aip/journal/cise/9/3/10.1109/MCSE.2007.53">publisher link</a>)
