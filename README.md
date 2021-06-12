@@ -1,6 +1,6 @@
 # MinervaLab 2.0 Bertsioaren biltegia
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jongablop/MinervaLab/master)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Ikergym/MinervaLab/master)
 [![Documentation Status](https://readthedocs.org/projects/minervalab/badge/?version=latest)](https://minervalab-v20.readthedocs.io/en/latest/)
 
 ----------------------------
