@@ -20,6 +20,13 @@ Notebook-ak nabigatzailean exekutatu daitezke [Binder](https://mybinder.org/) er
 
 <br/>
 
+## Dokumentazioa
+
+Aplikazio guztien dokumentazioa eskuragarri dago [Read the Docs](https://minervalab-v20.readthedocs.io/en/latest/) atarian.
+
+
+<br/>
+
 ## 2.0 Bertsioko aplikazio berriak:
 
 Aplikazioei erreferentzia egiteko, zenbakizko kode bat esleitu zaio aplikazio bakoitzari, lehenengo bertsioko numerazio-sistemari jarraituz. Tabla honetan bigarren bertsiorako garatutako aplikazioen zerrenda aurki daiteke. Aplikazioaren helbidean klikatuz gero, Binderreko notebook exekutagarria irekiko da. Iturri-kodea ikusteko biltegi honetan bertan ireki daitezke aplikazioak, dagokien helbidean
